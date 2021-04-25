@@ -1,0 +1,41 @@
+// font-family: 'Big Shoulders Display', cursive;
+// font-family: 'Lexend Deca', sans-serif;
+@use 'config/variables' as *;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  font-family: $primary-font;
+  color: $veryLightGray;
+
+  font-size:1rem;
+  display: flex;
+  //align-items:baseline;
+  margin-left: auto;
+  margin-right: auto;
+  // justify-content: center;
+  background: $transparentWhite;
+}
+body,
+h3,
+p {
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  background-color: $veryLightGray;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+}

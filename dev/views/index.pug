@@ -1,0 +1,21 @@
+include ./data/data.pug
+include ./blocks/card.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        link(rel="shortcut icon", href="./assets/img/favicon-32x32.png", type="image/x-icon")
+        link(rel='preconnect' href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap' rel='stylesheet')
+        link(rel="stylesheet", href="./css/style.css")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- link(rel="preconnect", href="https://fonts.gstatic.com")
+        //- link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap")
+        title Frontend Mentor | 3-Columns Preview Card Component
+    body
+        main
+            section.cards
+                each cardInfo in cardsInfo
+                    + card(cardInfo.title, cardInfo.description)
+
