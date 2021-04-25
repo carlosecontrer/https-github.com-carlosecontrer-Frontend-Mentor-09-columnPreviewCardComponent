@@ -1,7 +1,7 @@
 mixin card(title, description, classModifier='', extension=".svg")
     article(class=`card card__${title} ${classModifier}`)
         header.card__header
-            img(src=`./assets/img/icon-${title}.svg`, alt="")
+            img(src=`./assets/img/icon-${title.toLowerCase()}.svg`, alt="")
         .card__content
             h3.card__title= title 
             p.card__description= description
